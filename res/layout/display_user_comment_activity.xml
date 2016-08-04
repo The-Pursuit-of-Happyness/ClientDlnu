@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:onClick="onBack"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/title_Color"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:drawableLeft="@drawable/back_arrows"
+        android:textSize="22sp"
+		android:text="用户评论"/>
+    
+     <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/order_mess_tip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="额，暂时还没有用户评论！"
+            android:textColor="@color/list_item_Ablack"
+            android:textSize="22sp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/order_mess_Loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="玩命加载中..."
+                android:textColor="#88000000"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/show_user_comment_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#ccc"
+            android:dividerHeight="0dp" >
+        </ListView>
+    </FrameLayout>
+
+</LinearLayout>

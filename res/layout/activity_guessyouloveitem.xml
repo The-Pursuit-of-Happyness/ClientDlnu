@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/messimage"
+        android:layout_margin="10dp"
+        android:maxWidth="80dp"
+        android:maxHeight="80dp"
+        android:adjustViewBounds="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">       
+    </ImageView>
+    <LinearLayout 
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical">       
+         <TextView            
+            android:id="@+id/messname"
+            android:textSize="20sp"   
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+          <TextView 
+            android:textSize="15sp" 
+            android:textColor="#828a82"         
+            android:id="@+id/shopname"                    
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+          <TextView           
+            android:textSize="15sp"
+            android:textColor="#00ff00"
+            android:id="@+id/messprice"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </LinearLayout>
+    
+    <TextView
+            android:text="查看详情"
+            android:paddingRight="20dp"
+            android:gravity="right"
+            android:textColor="#3b473b"
+            android:textSize="15sp"
+            android:id="@+id/readmore"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp"/>
+</LinearLayout>

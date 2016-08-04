@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mess.clientdlnu"
+    android:versionCode="1"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.mess.ordermess.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mess.ordermess.OrderMessMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mess.order.MyEmill"
+            android:label="@string/myemill"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity android:name="com.mess.ordermess.MyOrderActivity" />
+        <activity android:name="com.mess.ordermess.NewsActivity" />
+        <activity android:name="com.mess.ordermess.OrderMessActivity" />
+        <activity android:name="com.mess.ordermess.ClassifyNavigationActivity" />
+        <activity android:name="com.mess.publicmethod.PublicShowMessMsgActivity" />
+        <activity android:name="com.mess.publicmethod.PublicShowShopMsgActivity" />
+        <activity android:name="com.mess.publicmethod.PublicMessMsgActivity" />
+        <activity android:name="com.mess.publicmethod.PublicShowMessListActivity" />
+        <activity android:name="com.mess.publicmethod.PublicShowShopMessListActivity" />
+        <activity android:name="com.mess.publicmethod.ShowShopActivity"/>
+        <activity
+            android:name="com.mess.order.MyMessage"
+            android:label="@string/mymessage" />
+        <activity
+            android:name="com.mess.order.SelectSex"
+            android:label="@string/tipofsex"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity android:name="com.mess.order.AccomplishOrder" />
+        <activity android:name="com.mess.order.MyOrder" />
+        <activity android:name="com.mess.order.MyWallet" />
+        <activity android:name="com.mess.order.AboutUs" />
+        <activity
+            android:name="com.mess.order.Myname"
+            android:label="@string/tipofname" />
+        <activity
+            android:name="com.mess.order.MyPersonalizedsignature"
+            android:label="@string/personalizedsignature"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name="com.mess.publicmethod.PublicByOrder"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.mess.ordermess.UserLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mess.publicmethod.SearchMess"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.mess.ordermess.UserRegister"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.mess.publicmethod.PublicUserCommentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity android:name="com.mess.publicmethod.DisplayUserComment" />
+        <activity android:name="com.mess.publicmethod.Setting"/>
+        
+        <service android:name="com.mess.ordermess.services.CleanCacheFile"/>
+    </application>
+
+</manifest>

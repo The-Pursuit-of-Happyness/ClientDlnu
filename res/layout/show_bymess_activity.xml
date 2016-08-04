@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <TextView
+        android:id="@+id/tv_by_mess_tip"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/title_Color"
+        android:clickable="true"
+        android:drawableLeft="@drawable/back_arrows"
+        android:gravity="center_vertical"
+        android:onClick="backMenu"
+        android:text=" 确认订单"
+        android:textColor="@color/withe"
+        android:textSize="22sp" />
+
+    <ScrollView
+        android:id="@+id/show_mess_message_Lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_by_mess_tip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" 
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:id="@+id/logo_tip"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/logo_tip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_by_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_by_name"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/by_order_tip"
+                        android:textColor="@color/list_item_red"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View style="@style/my_Distance" />
+
+            <TextView
+                android:id="@+id/tv_by_mess_shopName"
+                style="@style/show_mess_textView"
+                android:layout_marginTop="5dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/Awithe" >
+
+                <ImageView
+                    android:id="@+id/iv_mess_icon"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@id/iv_mess_icon"
+                    android:textSize="20sp" >
+
+                    <TextView
+                        android:id="@+id/iv_mess_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/list_item_black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/iv_mess_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_mess_name"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/list_item_Ablack"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_mess_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_mess_temp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/list_item_red"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/by_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/iv_mess_temp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/list_item_Ablack"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="购买数量"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_by_mess_add"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/btn_by_mess_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/btn_by_mess_add"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/btn_by_mess_slate"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_toLeftOf="@id/btn_by_mess_tv"
+                    android:text="-" />
+            </RelativeLayout>
+
+            <TextView style="@style/my_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@drawable/jiantou0_pressed"
+                android:text="配送方式:  自取"
+                android:textSize="18sp" />
+
+            <TextView style="@style/my_line" />
+
+            <TextView
+                android:id="@+id/by_mess_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+
+            <TextView style="@style/my_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@drawable/jiantou0_pressed"
+                android:text="优惠:  暂无"
+                android:textSize="18sp" />
+
+            <TextView style="@style/my_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:text="给卖家留言："
+                android:textColor="@color/list_item_Ablack"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/by_mess_leave_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="最大输入200字"
+                android:maxLength="200" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/Awithe"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/by_mess_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textColor="@color/noName"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/my_pressed_bymess_style"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="OkByMess"
+            android:text="确认"
+            android:textColor="@color/withe"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

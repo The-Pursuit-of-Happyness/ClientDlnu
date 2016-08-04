@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="itemtitle">
+        <item>我的订单</item>
+        <item>我的消费记录</item>
+        <item>我的钱包</item>
+        <item>系统设置</item>
+        <item>关于我们</item>
+    </string-array>
+
+    <string name="myorder">我的订单</string>
+    <string name="myexpensecalendar">我的消费记录</string>
+    <string name="mywallet">我的钱包</string>
+    <string name="aboutus">关于我们</string>
+    <string name="versions">版本信息</string>
+    <string name="functionintroduce">功能介绍</string>
+    <string name="functionmessage">        	&#160;&#160;&#160;&#160;点餐宝是一款专为吃货设计的一款基于学校食堂的点餐软
+        	件,可以方便广大同学的就餐,节约时间,同时实现点餐的电子化,将科学技术更好的应用于日
+        	常生活中,提高我们的生活质量。\n
+        	&#160;&#160;&#160;&#160;本软件基本实现了学生日常生活中的点餐需求,按照菜品的
+        	新旧、热销程度、是否做活动以及店家等进行分类,方便学生查找自己喜欢的食品。充分考虑学生
+        	的用餐需求,为他们推荐即营养 又美味的食品。</string>
+    <string name="help">帮助</string>
+    <string name="helpmessage">        	\n
+        	1.程序反应较慢\n
+        	由于应用中图片较多,所以加载较慢,请耐心等待。\n
+        	2.程序有不少bug\n
+        	由于编者水平有限,初次编写小应用,经验不足,日后定会改善。\n
+        	3.程序功能较简单\n
+        	由于编者水平有限,请期待更高版本的更新,请耐心等待。\n
+        	如果大家对程序有好的改进建议和意见,欢迎联系我们。</string>
+    <string name="callus">联系我们</string>
+    <string name="usmessage">        	\n
+        	项目负责人：\n
+        	姚鸿       	qq：2293952179\n
+        	开发团队成员：\n
+        	夏文齐    	qq：1025582613\n
+        	常晨       	qq：707306945\n
+        	慕爽       	qq：930528771\n</string>
+    <string name="copyright">Copyright©2015.8.28 CMXY.All Rights Reserved.</string>
+    <string name="versionsmessage">V 1.1.0</string>
+    <string name="unsure">未设置</string>
+    <string name="mymessage">个人信息</string>
+    <string name="tipofsex">性别</string>
+    <string name="man">男</string>
+    <string name="weman">女</string>
+    <string name="photo">相册</string>
+    <string name="name">昵称</string>
+    <string name="tipofname">昵称</string>
+    <string name="hint">请输入昵称,不超过10个字符</string>
+    <string name="sure">确定</string>
+    <string name="cancle">取消</string>
+    <string name="account">用户名</string>
+    <string name="hintofemill">请输入邮箱号码</string>
+    <string name="nickName">&#160;&#160;昵称</string>
+    <string name="myemill">&#160;&#160;我的邮箱</string>
+    <string name="mycall">&#160;&#160;我的电话</string>
+    <string name="myaddress">&#160;&#160;我的地址</string>
+    <string name="sex">&#160;&#160;性别</string>
+    <string name="address">&#160;&#160;专业</string>
+    <string name="personalizedsignature">&#160;&#160;个性签名</string>
+    <string name="hintofpersonalizedsignature">请输入个性签名,不超过15个字符</string>
+    <string name="personalmessage">个人信息</string>
+
+</resources>

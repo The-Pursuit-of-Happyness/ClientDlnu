@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_mess_icon"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical" />
+
+    <RelativeLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="40dp"
+        android:layout_toRightOf="@id/iv_mess_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/iv_mess_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/list_item_black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/iv_mess_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_below="@id/iv_mess_name"
+            android:textColor="@color/list_item_Ablack"
+            android:textSize="16sp" />
+
+        <RatingBar
+            android:id="@+id/rb_mess_star"
+            style="@style/roomRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_mess_describe"
+            android:isIndicator="true"
+            android:numStars="5" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/mv_mess_state"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp" />
+
+    <View 
+        android:layout_below="@id/mv_mess_state"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/list_item_Ablack"/>
+    
+</RelativeLayout>

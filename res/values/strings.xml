@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">点餐宝</string>
+    <string name="register_tip">提示</string>
+    <string name="setting">系统设置</string>
+	<string name="register_prograss">正在注册...</string>
+	<string name="by_order_tip">温馨提示：请于30分钟内取饭,超时将收取饭菜加热费用</string>
+</resources>
